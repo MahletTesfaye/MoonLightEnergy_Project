@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }} # Use a matrix to run on different OS
 
     steps:
       - name: Checkout code
